@@ -1,0 +1,16 @@
+
+version: "3"
+services:
+
+  zabbix-agent:
+    image: docker.io/zabbix/zabbix-agent
+    container_name: zabbix-agent
+    ports:
+      - 10050:10050
+    restart: always
+    environment:
+      -  ZBX_SERVER_HOST=172.16.16.5
+    
+
+
+
