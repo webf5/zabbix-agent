@@ -7,7 +7,7 @@
 #ZBX_SERVER_HOST=Zabbix-Server服务器ip
 #ports:本机端口:10050
 
-docker-compose -f -d zabbix-agent.yml up 
+/usr/local/bin/docker-compose -f -d zabbix-agent.yml up 
 
 
 
